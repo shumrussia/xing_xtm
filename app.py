@@ -87,6 +87,11 @@ finally:
     el_radius.click()
     el_radius_value = driver.find_element_by_xpath("//option[@value='50']")
     el_radius_value.click()
+    # Additional search criteria
+    el_current_company = driver.find_element_by_xpath("//input[@name='current_company']")
+    el_current_title = driver.find_element_by_xpath("//input[@name='current_title']")
+    el_previous_company = driver.find_element_by_xpath("//input[@name='previous_company']")
+    ###
     el_search_button = driver.find_element_by_xpath("//button[contains(@class, 'search')]")
     time.sleep(random.uniform(0.2, 1.1))
     el_search_button.click()
